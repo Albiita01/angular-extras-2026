@@ -12,6 +12,7 @@ export class HomeComponent {
   private _serviceUpload: ServiceUpload = inject(ServiceUpload);
 
   @ViewChild("cajaImagen") cajaImagen!: ElementRef<HTMLInputElement>;
+
   public mensaje!: string;
 
   constructor(private _cdr: ChangeDetectorRef) { }
