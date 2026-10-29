@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { ElementRef, Injectable, ViewChild } from "@angular/core";
 import { environment } from "../../environments/environment.development";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { firstValueFrom } from "rxjs";
@@ -7,6 +7,8 @@ import { firstValueFrom } from "rxjs";
 export class ServiceUpload {
 
     url = environment.urlApiImagenes;
+
+    public mensaje!: string;
 
     constructor(private _http: HttpClient) { }
 

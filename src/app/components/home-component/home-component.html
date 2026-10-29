@@ -2,7 +2,7 @@
 <form>
     <label>Seleccione el archivo:</label>
     <br />
-    <input type="file" accept="image/*" class="form-control" />
+    <input type="file" #cajaImagen accept="image/*" class="form-control" />
     <br />
-    <button (click)="subirImagen()">Subir imagen</button>
+    <button type="button" (click)="subirImagen()" class="btn btn-primary">Subir imagen</button>
 </form>
