@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ServiceUpload } from '../../services/service.upload';
 
 @Component({
   selector: 'app-home-component',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './home-component.css',
 })
 export class HomeComponent {
+
+  private _service: ServiceUpload = inject(ServiceUpload);
 
   async subirImagen(): Promise<void> {
 
